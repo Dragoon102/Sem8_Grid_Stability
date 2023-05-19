@@ -7,7 +7,7 @@ import streamlit as st
 
 ### intro ###
 """ # Grid Stability Prediction
-
+### Under Supervision of Dr. Ranjana Vyas.
 This simple app can be used to see how adjusting model inputs affect the resulting predictions.
  
 In the simulated conditions, lowering the response delays and willingness to adapt generally stabilises the grid - but this
@@ -67,8 +67,8 @@ st.subheader("Grid condition summary:")
 st.write(input_df)
 
 st.subheader("Predictions:")
-clf = pickle.load(open("grid_clf.pkl", "rb"))
-reg = pickle.load(open("grid_reg.pkl", "rb"))
+clf = pickle.load(open("/content/Sem8_Grid_Stability/grid_clf.pkl, "rb"))
+reg = pickle.load(open("/content/Sem8_Grid_Stability/grid_reg.pkl, "rb"))
 
 # transformation already part of pipeline
 clf_pred = clf.predict(input_df)[0]
@@ -79,4 +79,12 @@ st.markdown(f"Best classifier's prediction: **{stability_dict.get(clf_pred)}**")
 st.markdown(
     f"Best regressor's prediction: {round(reg_pred, 3)} (**{stability_dict.get(int(reg_pred < 0))}**)"
 )
+
+                       
+### intro ###
+""" # Team Members
+### Vanshika Garg (IIT2019216)
+Anshuman Bhardwaj (IIT2019227)
+Gaurav Nimrani (IIT2019231)
+"""                       
 
