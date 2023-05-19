@@ -83,7 +83,7 @@ st.markdown(
                        
 ### intro ###
 """ # Team Members
-### Vanshika Garg (IIT2019216)
+Vanshika Garg (IIT2019216)
 Anshuman Bhardwaj (IIT2019227)
 Gaurav Nimrani (IIT2019231)
 """                       
